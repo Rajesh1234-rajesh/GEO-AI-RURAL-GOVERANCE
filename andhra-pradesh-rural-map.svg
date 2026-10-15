@@ -1,0 +1,351 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 520" width="600" height="520">
+  <!-- White background -->
+  <rect width="600" height="520" fill="#ffffff"/>
+
+  <!-- ===================== SKY / GRADIENT TOP ===================== -->
+  <defs>
+    <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f0faf0"/>
+      <stop offset="100%" stop-color="#ffffff"/>
+    </linearGradient>
+    <linearGradient id="fieldGrad1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6db56d"/>
+      <stop offset="100%" stop-color="#4a9e4a"/>
+    </linearGradient>
+    <linearGradient id="fieldGrad2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8ac98a"/>
+      <stop offset="100%" stop-color="#5db55d"/>
+    </linearGradient>
+    <linearGradient id="riverGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7bbdd4"/>
+      <stop offset="100%" stop-color="#5a9db8"/>
+    </linearGradient>
+    <linearGradient id="apMapGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e8f5e8"/>
+      <stop offset="100%" stop-color="#d0ecd0"/>
+    </linearGradient>
+    <filter id="softShadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="2" dy="4" stdDeviation="6" flood-color="#2d7d2d" flood-opacity="0.12"/>
+    </filter>
+    <filter id="cardShadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Sky background -->
+  <rect width="600" height="520" fill="url(#skyGrad)"/>
+
+  <!-- ===================== AP MAP SILHOUETTE ===================== -->
+  <!-- Stylised Andhra Pradesh outline (center of illustration) -->
+  <g filter="url(#softShadow)">
+    <path d="
+      M 160 60
+      C 180 50, 220 48, 260 55
+      C 300 62, 340 58, 370 70
+      C 400 82, 420 90, 440 110
+      C 460 130, 455 155, 450 175
+      C 445 195, 430 210, 420 230
+      C 410 250, 415 270, 410 290
+      C 405 310, 395 325, 380 340
+      C 365 355, 345 365, 325 375
+      C 305 385, 285 395, 265 400
+      C 245 405, 220 400, 200 390
+      C 180 380, 165 365, 150 348
+      C 135 330, 125 310, 115 288
+      C 105 266, 100 242, 98 218
+      C 96 194, 100 170, 108 148
+      C 116 126, 140 70, 160 60 Z
+    " fill="url(#apMapGrad)" stroke="#4caf50" stroke-width="2.5" opacity="0.9"/>
+  </g>
+
+  <!-- Internal district grid lines (subtle) -->
+  <g stroke="#a8d8a8" stroke-width="0.8" stroke-dasharray="4,4" opacity="0.7">
+    <line x1="220" y1="80" x2="200" y2="200"/>
+    <line x1="280" y1="70" x2="260" y2="220"/>
+    <line x1="340" y1="85" x2="330" y2="210"/>
+    <line x1="390" y1="110" x2="360" y2="260"/>
+    <line x1="130" y1="180" x2="380" y2="195"/>
+    <line x1="120" y1="240" x2="390" y2="255"/>
+    <line x1="115" y1="295" x2="370" y2="310"/>
+    <line x1="140" y1="345" x2="340" y2="355"/>
+  </g>
+
+  <!-- ===================== RIVER (Krishna / Godavari) ===================== -->
+  <path d="M 108 218 C 140 210, 180 215, 220 208 C 260 201, 300 195, 340 205 C 370 213, 400 225, 415 240"
+        fill="none" stroke="url(#riverGrad)" stroke-width="5" stroke-linecap="round" opacity="0.85"/>
+  <path d="M 108 218 C 140 212, 180 217, 220 210 C 260 203, 300 197, 340 207 C 370 215, 400 227, 415 242"
+        fill="none" stroke="#9fcde0" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+  <!-- River label -->
+  <text x="220" y="198" font-family="Georgia, serif" font-size="8" fill="#4a8fa8" opacity="0.85" font-style="italic">Krishna River</text>
+
+  <!-- Second river (Godavari - upper) -->
+  <path d="M 160 140 C 200 132, 250 128, 300 135 C 340 140, 380 155, 420 165"
+        fill="none" stroke="url(#riverGrad)" stroke-width="4" stroke-linecap="round" opacity="0.7"/>
+  <text x="195" y="124" font-family="Georgia, serif" font-size="8" fill="#4a8fa8" opacity="0.75" font-style="italic">Godavari</text>
+
+  <!-- ===================== AGRICULTURAL FIELDS ===================== -->
+  <!-- Field patches across the map -->
+  <!-- Field 1 - top left area -->
+  <rect x="145" y="155" width="38" height="22" rx="3" fill="#7bc67b" opacity="0.75"/>
+  <line x1="145" y1="162" x2="183" y2="162" stroke="#5a9e5a" stroke-width="0.7" opacity="0.6"/>
+  <line x1="145" y1="169" x2="183" y2="169" stroke="#5a9e5a" stroke-width="0.7" opacity="0.6"/>
+  <line x1="157" y1="155" x2="157" y2="177" stroke="#5a9e5a" stroke-width="0.7" opacity="0.6"/>
+  <line x1="170" y1="155" x2="170" y2="177" stroke="#5a9e5a" stroke-width="0.7" opacity="0.6"/>
+
+  <!-- Field 2 -->
+  <rect x="230" y="160" width="32" height="20" rx="3" fill="#8fce8f" opacity="0.7"/>
+  <line x1="230" y1="167" x2="262" y2="167" stroke="#5a9e5a" stroke-width="0.7" opacity="0.55"/>
+  <line x1="244" y1="160" x2="244" y2="180" stroke="#5a9e5a" stroke-width="0.7" opacity="0.55"/>
+
+  <!-- Field 3 -->
+  <rect x="290" y="152" width="35" height="22" rx="3" fill="#7bc67b" opacity="0.7"/>
+  <line x1="290" y1="159" x2="325" y2="159" stroke="#5a9e5a" stroke-width="0.7"/>
+  <line x1="290" y1="166" x2="325" y2="166" stroke="#5a9e5a" stroke-width="0.7"/>
+  <line x1="305" y1="152" x2="305" y2="174" stroke="#5a9e5a" stroke-width="0.7"/>
+
+  <!-- Field 4 lower -->
+  <rect x="160" y="265" width="40" height="24" rx="3" fill="#8fce8f" opacity="0.7"/>
+  <line x1="160" y1="273" x2="200" y2="273" stroke="#5a9e5a" stroke-width="0.7"/>
+  <line x1="160" y1="281" x2="200" y2="281" stroke="#5a9e5a" stroke-width="0.7"/>
+  <line x1="178" y1="265" x2="178" y2="289" stroke="#5a9e5a" stroke-width="0.7"/>
+
+  <!-- Field 5 lower right -->
+  <rect x="305" y="275" width="36" height="22" rx="3" fill="#7bc67b" opacity="0.65"/>
+  <line x1="305" y1="282" x2="341" y2="282" stroke="#5a9e5a" stroke-width="0.7"/>
+  <line x1="321" y1="275" x2="321" y2="297" stroke="#5a9e5a" stroke-width="0.7"/>
+
+  <!-- ===================== DISTRICT DOTS (main cities) ===================== -->
+  <!-- Visakhapatnam -->
+  <circle cx="395" cy="118" r="6" fill="#2d7d2d" opacity="0.85"/>
+  <circle cx="395" cy="118" r="3" fill="#ffffff"/>
+  <text x="403" y="122" font-family="Arial, sans-serif" font-size="9" fill="#1a5c1a" font-weight="600">Visakhapatnam</text>
+
+  <!-- Vijayawada -->
+  <circle cx="268" cy="245" r="7" fill="#2d7d2d" opacity="0.9"/>
+  <circle cx="268" cy="245" r="3" fill="#ffffff"/>
+  <text x="278" y="249" font-family="Arial, sans-serif" font-size="9" fill="#1a5c1a" font-weight="600">Vijayawada</text>
+
+  <!-- Guntur -->
+  <circle cx="250" cy="285" r="5.5" fill="#3a8a3a" opacity="0.85"/>
+  <circle cx="250" cy="285" r="2.5" fill="#ffffff"/>
+  <text x="260" y="289" font-family="Arial, sans-serif" font-size="8.5" fill="#1a5c1a" font-weight="600">Guntur</text>
+
+  <!-- Tirupati -->
+  <circle cx="200" cy="360" r="5.5" fill="#3a8a3a" opacity="0.85"/>
+  <circle cx="200" cy="360" r="2.5" fill="#ffffff"/>
+  <text x="210" y="364" font-family="Arial, sans-serif" font-size="8.5" fill="#1a5c1a" font-weight="600">Tirupati</text>
+
+  <!-- Kurnool -->
+  <circle cx="175" cy="310" r="5" fill="#3a8a3a" opacity="0.8"/>
+  <circle cx="175" cy="310" r="2.2" fill="#ffffff"/>
+  <text x="110" y="308" font-family="Arial, sans-serif" font-size="8" fill="#1a5c1a" font-weight="600">Kurnool</text>
+
+  <!-- Nellore -->
+  <circle cx="300" cy="348" r="5" fill="#3a8a3a" opacity="0.8"/>
+  <circle cx="300" cy="348" r="2.2" fill="#ffffff"/>
+  <text x="310" y="352" font-family="Arial, sans-serif" font-size="8" fill="#1a5c1a" font-weight="600">Nellore</text>
+
+  <!-- Kakinada -->
+  <circle cx="370" cy="165" r="5" fill="#3a8a3a" opacity="0.8"/>
+  <circle cx="370" cy="165" r="2.2" fill="#ffffff"/>
+  <text x="378" y="169" font-family="Arial, sans-serif" font-size="8" fill="#1a5c1a" font-weight="600">Kakinada</text>
+
+  <!-- Rajam -->
+  <circle cx="320" cy="95" r="4.5" fill="#3a8a3a" opacity="0.75"/>
+  <circle cx="320" cy="95" r="2" fill="#ffffff"/>
+  <text x="328" y="99" font-family="Arial, sans-serif" font-size="7.5" fill="#1a5c1a">Vizianagaram</text>
+
+  <!-- ===================== ROADS ===================== -->
+  <!-- National highway lines (subtle) -->
+  <path d="M 268 245 L 200 360" stroke="#c8a050" stroke-width="2.5" stroke-dasharray="6,3" opacity="0.6" stroke-linecap="round"/>
+  <path d="M 268 245 L 395 118" stroke="#c8a050" stroke-width="2" stroke-dasharray="6,3" opacity="0.5" stroke-linecap="round"/>
+  <path d="M 268 245 L 175 310" stroke="#c8a050" stroke-width="1.8" stroke-dasharray="5,3" opacity="0.5" stroke-linecap="round"/>
+  <path d="M 268 245 L 300 348" stroke="#c8a050" stroke-width="1.8" stroke-dasharray="5,3" opacity="0.5" stroke-linecap="round"/>
+  <path d="M 268 245 L 370 165" stroke="#c8a050" stroke-width="1.8" stroke-dasharray="5,3" opacity="0.45" stroke-linecap="round"/>
+
+  <!-- ===================== VILLAGE ICONS (houses) ===================== -->
+  <!-- Village 1 near Guntur -->
+  <g transform="translate(218,300)">
+    <rect x="-8" y="2" width="14" height="10" rx="1" fill="#e8d5b0" stroke="#b8983a" stroke-width="0.8"/>
+    <polygon points="-9,-2 7,-2 -1,-10" fill="#c0392b" opacity="0.75"/>
+    <rect x="-2" y="7" width="4" height="5" rx="0.5" fill="#8a6a30"/>
+  </g>
+  <!-- Village 2 -->
+  <g transform="translate(340,330)">
+    <rect x="-8" y="2" width="14" height="10" rx="1" fill="#e8d5b0" stroke="#b8983a" stroke-width="0.8"/>
+    <polygon points="-9,-2 7,-2 -1,-10" fill="#c0392b" opacity="0.75"/>
+    <rect x="-2" y="7" width="4" height="5" rx="0.5" fill="#8a6a30"/>
+  </g>
+  <!-- Village 3 upper -->
+  <g transform="translate(235,105)">
+    <rect x="-7" y="2" width="13" height="9" rx="1" fill="#e8d5b0" stroke="#b8983a" stroke-width="0.8"/>
+    <polygon points="-8,-2 7,-2 -1,-9" fill="#8b6914" opacity="0.7"/>
+    <rect x="-2" y="6" width="4" height="5" rx="0.5" fill="#8a6a30"/>
+  </g>
+
+  <!-- ===================== FARMER FIGURE ===================== -->
+  <g transform="translate(152,300)" opacity="0.85">
+    <!-- Body -->
+    <circle cx="0" cy="-18" r="6" fill="#f5c578"/>
+    <rect x="-5" y="-12" width="10" height="14" rx="2" fill="#3a7d44"/>
+    <!-- Legs -->
+    <line x1="-3" y1="2" x2="-5" y2="14" stroke="#6b4226" stroke-width="3" stroke-linecap="round"/>
+    <line x1="3" y1="2" x2="5" y2="14" stroke="#6b4226" stroke-width="3" stroke-linecap="round"/>
+    <!-- Arms / tool -->
+    <line x1="-5" y1="-8" x2="-14" y2="-2" stroke="#3a7d44" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="5" y1="-8" x2="14" y2="0" stroke="#3a7d44" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Hoe/tool -->
+    <line x1="14" y1="0" x2="18" y2="12" stroke="#8b6914" stroke-width="2" stroke-linecap="round"/>
+    <line x1="12" y1="12" x2="22" y2="12" stroke="#8b6914" stroke-width="2" stroke-linecap="round"/>
+    <!-- Hat -->
+    <ellipse cx="0" cy="-23" rx="9" ry="4" fill="#c8a050"/>
+    <rect x="-5" y="-27" width="10" height="5" rx="1" fill="#d4aa55"/>
+  </g>
+
+  <!-- ===================== HEALTHCARE ICON ===================== -->
+  <g transform="translate(370,290)" filter="url(#cardShadow)">
+    <rect x="-18" y="-18" width="36" height="36" rx="6" fill="#ffffff" stroke="#e0f0e0" stroke-width="1.2"/>
+    <!-- Red cross -->
+    <rect x="-4" y="-12" width="8" height="24" rx="2" fill="#e53935" opacity="0.85"/>
+    <rect x="-12" y="-4" width="24" height="8" rx="2" fill="#e53935" opacity="0.85"/>
+    <text x="0" y="28" font-family="Arial" font-size="7.5" fill="#555" text-anchor="middle">Healthcare</text>
+  </g>
+
+  <!-- ===================== WATER / TANK ICON ===================== -->
+  <g transform="translate(140,238)" opacity="0.85">
+    <!-- Water ripple -->
+    <ellipse cx="0" cy="8" rx="20" ry="8" fill="#7bbdd4" opacity="0.5"/>
+    <ellipse cx="0" cy="6" rx="14" ry="6" fill="#5a9db8" opacity="0.6"/>
+    <!-- Tank body -->
+    <rect x="-10" y="-10" width="20" height="18" rx="3" fill="#6baed6" opacity="0.8" stroke="#4a8fba" stroke-width="1"/>
+    <line x1="-10" y1="-4" x2="10" y2="-4" stroke="#4a8fba" stroke-width="0.8" opacity="0.7"/>
+    <line x1="-10" y1="0" x2="10" y2="0" stroke="#4a8fba" stroke-width="0.8" opacity="0.7"/>
+    <text x="0" y="22" font-family="Arial" font-size="7" fill="#2c6e8a" text-anchor="middle" font-weight="600">Water</text>
+  </g>
+
+  <!-- ===================== SCHOOL ICON ===================== -->
+  <g transform="translate(320,185)" filter="url(#cardShadow)" opacity="0.88">
+    <rect x="-16" y="-14" width="32" height="26" rx="3" fill="#fffef0" stroke="#e8d44d" stroke-width="1.2"/>
+    <polygon points="-17,-14 17,-14 0,-26" fill="#e8c020" opacity="0.85"/>
+    <!-- Door -->
+    <rect x="-4" y="3" width="8" height="9" rx="1" fill="#8b6914"/>
+    <!-- Windows -->
+    <rect x="-13" y="-8" width="7" height="6" rx="1" fill="#aee6f8" stroke="#7ec8e8" stroke-width="0.8"/>
+    <rect x="6" y="-8" width="7" height="6" rx="1" fill="#aee6f8" stroke="#7ec8e8" stroke-width="0.8"/>
+    <text x="0" y="22" font-family="Arial" font-size="7.5" fill="#555" text-anchor="middle">School</text>
+  </g>
+
+  <!-- ===================== GOV BUILDING ICON ===================== -->
+  <g transform="translate(195,175)" filter="url(#cardShadow)" opacity="0.88">
+    <rect x="-18" y="-12" width="36" height="24" rx="2" fill="#f0f4ff" stroke="#b0c0e0" stroke-width="1.2"/>
+    <!-- Columns -->
+    <rect x="-12" y="-6" width="4" height="18" rx="1" fill="#c0cce0"/>
+    <rect x="-3" y="-6" width="4" height="18" rx="1" fill="#c0cce0"/>
+    <rect x="6" y="-6" width="4" height="18" rx="1" fill="#c0cce0"/>
+    <!-- Roof -->
+    <polygon points="-19,-12 19,-12 0,-24" fill="#8090b8" opacity="0.75"/>
+    <text x="0" y="22" font-family="Arial" font-size="7.5" fill="#555" text-anchor="middle">Govt Office</text>
+  </g>
+
+  <!-- ===================== COMPLAINT PIN (GPS marker) ===================== -->
+  <!-- Complaint marker example -->
+  <g transform="translate(235,340)" opacity="0.9">
+    <circle cx="0" cy="-14" r="10" fill="#e53935" opacity="0.9"/>
+    <polygon points="-6,-6 6,-6 0,4" fill="#e53935" opacity="0.9"/>
+    <circle cx="0" cy="-14" r="5" fill="#ffffff"/>
+    <circle cx="0" cy="-14" r="2.5" fill="#e53935"/>
+    <text x="16" y="-10" font-family="Arial" font-size="7.5" fill="#b71c1c" font-weight="600">Complaint</text>
+  </g>
+
+  <!-- ===================== COASTAL AREA (Bay of Bengal) ===================== -->
+  <path d="M 420 110 C 445 145, 455 195, 445 240 C 435 285, 415 320, 395 355 C 385 370, 370 380, 355 385"
+        fill="none" stroke="#7bbdd4" stroke-width="6" stroke-linecap="round" opacity="0.35"/>
+  <!-- Wave pattern -->
+  <path d="M 430 150 Q 445 145 460 150 Q 475 155 490 150" stroke="#5a9db8" stroke-width="1.5" fill="none" opacity="0.5" stroke-linecap="round"/>
+  <path d="M 435 165 Q 450 160 465 165 Q 480 170 495 165" stroke="#5a9db8" stroke-width="1.5" fill="none" opacity="0.4" stroke-linecap="round"/>
+  <path d="M 432 180 Q 447 175 462 180 Q 477 185 492 180" stroke="#5a9db8" stroke-width="1.5" fill="none" opacity="0.35" stroke-linecap="round"/>
+  <text x="465" y="175" font-family="Georgia, serif" font-size="9" fill="#4a8fa8" opacity="0.7" font-style="italic" transform="rotate(-75,465,175)">Bay of Bengal</text>
+
+  <!-- ===================== INFO CARDS (floating badges) ===================== -->
+  <!-- AI Insights badge -->
+  <g transform="translate(30,60)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="110" height="38" rx="8" fill="#ffffff" stroke="#c8e6c9" stroke-width="1.2"/>
+    <circle cx="18" cy="19" r="10" fill="#e8f5e8"/>
+    <!-- AI brain icon -->
+    <text x="18" y="23" font-family="Arial" font-size="11" fill="#2d7d2d" text-anchor="middle">🤖</text>
+    <text x="34" y="14" font-family="Arial" font-size="8.5" fill="#1a5c1a" font-weight="700">AI Insights</text>
+    <text x="34" y="26" font-family="Arial" font-size="7.5" fill="#4a7c59">Decision Support</text>
+  </g>
+
+  <!-- GIS Map badge -->
+  <g transform="translate(30,115)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="110" height="38" rx="8" fill="#ffffff" stroke="#c8e6c9" stroke-width="1.2"/>
+    <circle cx="18" cy="19" r="10" fill="#e8f5e8"/>
+    <text x="18" y="23" font-family="Arial" font-size="11" fill="#2d7d2d" text-anchor="middle">🗺️</text>
+    <text x="34" y="14" font-family="Arial" font-size="8.5" fill="#1a5c1a" font-weight="700">GIS Village Map</text>
+    <text x="34" y="26" font-family="Arial" font-size="7.5" fill="#4a7c59">Real-time Tracking</text>
+  </g>
+
+  <!-- Scheme badge -->
+  <g transform="translate(30,170)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="110" height="38" rx="8" fill="#ffffff" stroke="#c8e6c9" stroke-width="1.2"/>
+    <circle cx="18" cy="19" r="10" fill="#e8f5e8"/>
+    <text x="18" y="23" font-family="Arial" font-size="11" fill="#2d7d2d" text-anchor="middle">📋</text>
+    <text x="34" y="14" font-family="Arial" font-size="8.5" fill="#1a5c1a" font-weight="700">Gov Schemes</text>
+    <text x="34" y="26" font-family="Arial" font-size="7.5" fill="#4a7c59">Eligibility Check</text>
+  </g>
+
+  <!-- Complaints badge -->
+  <g transform="translate(30,225)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="110" height="38" rx="8" fill="#ffffff" stroke="#c8e6c9" stroke-width="1.2"/>
+    <circle cx="18" cy="19" r="10" fill="#e8f5e8"/>
+    <text x="18" y="23" font-family="Arial" font-size="11" fill="#2d7d2d" text-anchor="middle">📢</text>
+    <text x="34" y="14" font-family="Arial" font-size="8.5" fill="#1a5c1a" font-weight="700">Complaints</text>
+    <text x="34" y="26" font-family="Arial" font-size="7.5" fill="#4a7c59">Citizen Voice</text>
+  </g>
+
+  <!-- Districts count badge -->
+  <g transform="translate(460,60)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="110" height="38" rx="8" fill="#ffffff" stroke="#c8e6c9" stroke-width="1.2"/>
+    <circle cx="18" cy="19" r="10" fill="#e8f5e8"/>
+    <text x="18" y="23" font-family="Arial" font-size="11" fill="#2d7d2d" text-anchor="middle">🏛️</text>
+    <text x="34" y="14" font-family="Arial" font-size="8.5" fill="#1a5c1a" font-weight="700">26 Districts</text>
+    <text x="34" y="26" font-family="Arial" font-size="7.5" fill="#4a7c59">Andhra Pradesh</text>
+  </g>
+
+  <!-- Analytics badge -->
+  <g transform="translate(460,115)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="110" height="38" rx="8" fill="#ffffff" stroke="#c8e6c9" stroke-width="1.2"/>
+    <circle cx="18" cy="19" r="10" fill="#e8f5e8"/>
+    <text x="18" y="23" font-family="Arial" font-size="11" fill="#2d7d2d" text-anchor="middle">📊</text>
+    <text x="34" y="14" font-family="Arial" font-size="8.5" fill="#1a5c1a" font-weight="700">Analytics</text>
+    <text x="34" y="26" font-family="Arial" font-size="7.5" fill="#4a7c59">Real-time Data</text>
+  </g>
+
+  <!-- Agriculture badge -->
+  <g transform="translate(460,170)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="110" height="38" rx="8" fill="#ffffff" stroke="#c8e6c9" stroke-width="1.2"/>
+    <circle cx="18" cy="19" r="10" fill="#e8f5e8"/>
+    <text x="18" y="23" font-family="Arial" font-size="11" fill="#2d7d2d" text-anchor="middle">🌾</text>
+    <text x="34" y="14" font-family="Arial" font-size="8.5" fill="#1a5c1a" font-weight="700">Agriculture</text>
+    <text x="34" y="26" font-family="Arial" font-size="7.5" fill="#4a7c59">Rural Support</text>
+  </g>
+
+  <!-- Monitor badge -->
+  <g transform="translate(460,225)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="110" height="38" rx="8" fill="#ffffff" stroke="#c8e6c9" stroke-width="1.2"/>
+    <circle cx="18" cy="19" r="10" fill="#e8f5e8"/>
+    <text x="18" y="23" font-family="Arial" font-size="11" fill="#2d7d2d" text-anchor="middle">👁️</text>
+    <text x="34" y="14" font-family="Arial" font-size="8.5" fill="#1a5c1a" font-weight="700">Monitoring</text>
+    <text x="34" y="26" font-family="Arial" font-size="7.5" fill="#4a7c59">Gov Teams</text>
+  </g>
+
+  <!-- ===================== BOTTOM TAGLINE ===================== -->
+  <rect x="80" y="430" width="440" height="60" rx="12" fill="#f0faf0" stroke="#c8e6c9" stroke-width="1" opacity="0.9"/>
+  <text x="300" y="454" font-family="Arial, sans-serif" font-size="11" fill="#1a5c1a" text-anchor="middle" font-weight="700">Andhra Pradesh Rural Governance</text>
+  <text x="300" y="472" font-family="Arial, sans-serif" font-size="9.5" fill="#4a7c59" text-anchor="middle">GIS · AI · Citizen Complaints · Government Monitoring</text>
+  <text x="300" y="484" font-family="Arial, sans-serif" font-size="8.5" fill="#6a9c79" text-anchor="middle">26 Districts · Mandals · Villages · Real-Time Data</text>
+
+  <!-- ===================== AP LABEL ===================== -->
+  <text x="270" y="415" font-family="Georgia, serif" font-size="13" fill="#2d7d2d" text-anchor="middle" font-weight="700" opacity="0.7">Andhra Pradesh</text>
+</svg>

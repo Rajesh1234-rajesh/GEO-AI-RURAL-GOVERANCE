@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base */
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: #ffffff;
+  color: #1a1a1a;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #f0faf0; }
+::-webkit-scrollbar-thumb { background: #a8d8a8; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #4caf50; }
+
+/* Leaflet map */
+.leaflet-container { height: 100%; width: 100%; z-index: 1; }
+.leaflet-popup-content-wrapper {
+  border-radius: 12px !important;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.12) !important;
+  border: 1px solid #e2e8f0;
+}
+.leaflet-popup-content { margin: 14px 18px !important; min-width: 220px; }
+.leaflet-popup-tip { background: white !important; }
+
+/* Custom marker clusters */
+.marker-pending { background: #f59e0b; border: 2px solid #d97706; }
+.marker-inprogress { background: #3b82f6; border: 2px solid #2563eb; }
+.marker-resolved { background: #22c55e; border: 2px solid #16a34a; }
+
+/* Sidebar active link */
+.sidebar-link { transition: all 0.15s; }
+.sidebar-link.active { background-color: rgba(255,255,255,0.15); border-left: 3px solid #86efac; }
+.sidebar-link:hover:not(.active) { background-color: rgba(255,255,255,0.08); }
+
+/* Animations */
+.fade-in { animation: fadeIn 0.3s ease-in-out; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+.slide-up { animation: slideUp 0.3s ease-out; }
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Stat card hover */
+.stat-card { transition: transform 0.15s, box-shadow 0.15s; }
+.stat-card:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(45,125,45,0.12); }
+
+/* Form focus rings */
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  ring: 2px;
+  ring-color: #4caf50;
+  border-color: #4caf50;
+}
+
+/* Table row hover */
+.table-row-hover:hover { background-color: #f7fdf7; }
+
+/* Complaint status colors */
+.status-pending { background: #fef3c7; color: #92400e; border: 1px solid #f59e0b; }
+.status-inprogress { background: #dbeafe; color: #1e40af; border: 1px solid #3b82f6; }
+.status-resolved { background: #dcfce7; color: #14532d; border: 1px solid #22c55e; }
+
+/* AI insight card */
+.ai-badge { background: linear-gradient(90deg, #e8f5e8, #f0faf0); border: 1px solid #a8d8a8; }
